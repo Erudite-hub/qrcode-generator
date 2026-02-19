@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "framer-motion": "^12.4.10",
-    "next": "15.2.1",
+    "next": "15.2.8",
     "next-cloudinary": "^6.16.0",
     "qr-code-styling": "^1.9.1",
     "qrcode": "^1.5.4",
