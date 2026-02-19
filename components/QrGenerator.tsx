@@ -5,7 +5,6 @@ import QRCodeCanvas, { QRCodeCanvasRef } from "./QrCodeCanvas";
 import FileUploader from "./FileUploader";
 import FilePreview from "./FilePreview";
 import StyleControls from "./StyleControl";
-import InstructionModal from "./InstructionModal";  // <-- Import the modal
 
 const uploadToCloudinary = async (
   file: File,
@@ -55,7 +54,6 @@ const QrGenerator: React.FC = () => {
     | "extra-rounded"
   >("rounded");
   const [isUploading, setIsUploading] = useState<boolean>(false);
-  const [showModal, setShowModal] = useState<boolean>(true); // New state for modal
 
   const qrCodeCanvasRef = useRef<QRCodeCanvasRef>(null);
 

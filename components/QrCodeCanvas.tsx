@@ -58,7 +58,7 @@ const QRCodeCanvas = forwardRef<QRCodeCanvasRef, QRCodeCanvasProps>(
     const handleDownload = () => {
       if (qrCodeInstance.current) {
         qrCodeInstance.current.download({
-          name: "salatech-qr",
+          name: "qr-code",
           extension: "png",
         });
       }
@@ -77,7 +77,7 @@ const QRCodeCanvas = forwardRef<QRCodeCanvasRef, QRCodeCanvasProps>(
         if (navigator.share) {
           await navigator.share({
             title: "Scan this QR Code",
-            text: "Generated with SALATECH QR Generator",
+            text: "Generated with QR Generator",
             files: [file],
           });
         } else {
