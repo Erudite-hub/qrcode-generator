@@ -11,6 +11,7 @@ const FilePreview: React.FC<FilePreviewProps> = ({ fileData, fileType }) => {
     return <div className="text-gray-400">No file uploaded</div>;
   }
   if (fileType.startsWith("image/")) {
+    // eslint-disable-next-line @next/next/no-img-element
     return <img src={fileData} alt="Uploaded" className="object-contain w-full h-full rounded" />;
   }
   if (fileType.startsWith("video/")) {
