@@ -78,7 +78,7 @@ export function QRForms() {
     <div className="flex flex-col border rounded-lg bg-card shadow-sm h-full max-h-full lg:max-h-[calc(100vh-12rem)]">
       <div className="p-4 border-b bg-muted/10">
         <Label className="mb-2 block text-sm font-medium">Select QR Code Type</Label>
-        <Select value={contentType} onValueChange={(val: any) => setContentType(val)}>
+        <Select value={contentType} onValueChange={(val) => setContentType(val as QRContentType)}>
           <SelectTrigger className="w-full bg-background">
             <SelectValue />
           </SelectTrigger>
